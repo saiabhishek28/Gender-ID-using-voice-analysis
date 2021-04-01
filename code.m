@@ -29,7 +29,9 @@ fprintf("Plotting the waveform…\n");
 
 y=getaudiodata(arObj);          % Get audio sample data
 
+
 plot(y);             % Plot the waveform
+hold on;
 
 ms2 = fs/500;
 
@@ -40,7 +42,7 @@ r = xcorr(y, ms20, "coeff");
 d = (-ms20:ms20)/fs;
 
 plot(d, r);
-
+hold on;
 title("Autocorrelation");
 
 xlabel("Delay (s)");
