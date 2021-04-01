@@ -57,6 +57,8 @@ r = r(ms20 + 1 : 2*ms20+1);
 
 Fth= 160; %% threshold frequency is 160 Hz, you can change this frequency too
 
+fprintf("The fundamental frequency was found to be ... ", Fx);
+
 if Fx> Fth
 
     disp("It is a female voice!")
