@@ -57,7 +57,7 @@ r = r(ms20 + 1 : 2*ms20+1);
 
 Fth= 160; %% threshold frequency is 160 Hz, you can change this frequency too
 
-fprintf("The fundamental frequency was found to be ... ", Fx);
+fprintf("\nThe fundamental frequency was found to be ... \n ", Fx);
 
 if Fx> Fth
 
